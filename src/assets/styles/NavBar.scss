@@ -1,0 +1,50 @@
+$primary: #f3123c;
+$gray: #94949e;
+
+.NavBar {
+  &__container {
+    margin: auto;
+    width: 100%;
+    max-width: 993px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    user-select: none;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: $gray;
+    padding: 0 20px;
+
+    &--image {
+      padding-right: 20px;
+      height: 30px;
+      width: 30px;
+    }
+
+    &--text-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--text {
+      font-size: 32px;
+      
+      &-actived {
+        color: $primary;
+      }
+    }
+
+    &--actived {
+      border-bottom: 3px solid $primary;
+    }
+  }
+}

@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  background: rgb(243, 245, 248);
+  min-height: 100vh;
+  padding: 16px 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-header {
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+}

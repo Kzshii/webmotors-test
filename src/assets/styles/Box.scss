@@ -1,0 +1,34 @@
+.Box {
+  &__content {
+    margin: auto;
+    padding: 20px 30px;
+    max-width: 909px;
+    height: 50vmin;
+    max-height: 189px;
+    background-color: #ffffff;
+
+    .Dropdown__content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px 0;
+
+      &--state {
+        display: flex;
+      }
+    }
+  }
+
+  &__Checkbox {
+    display: flex;
+    padding: 5px 0;
+  }
+
+  &.Footer {
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

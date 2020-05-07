@@ -1,0 +1,58 @@
+$red: #f3123c;
+$gray: #94949e;
+
+.Checkbox {
+  &__container {
+    display: block;
+    position: relative;
+    padding: 0 25px;
+    cursor: pointer;
+    color: $gray;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    input:checked ~ .Checkbox__checkmark {
+      background-color: #ffffff;
+      &:after {
+        display: block;
+      }
+    }
+
+    .Checkbox__checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+
+      left: 6px;
+      top: 4px;
+      width: 2px;
+      height: 5px;
+      border: solid $red;
+      border-width: 0 1.5px 1.5px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+    }
+  }
+  &__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #ffffff;
+    border: 1px solid $gray;
+    border-radius: 2px;
+  }
+}

@@ -1,0 +1,21 @@
+
+
+.Select {
+  max-width: 300px;
+  width: 300px;
+
+  &__mini {
+    width: 135px;
+    max-width: 135px;
+  }
+  
+  &__normal {
+    width: 200px;
+    max-width: 200px;
+  }
+
+  &__large {
+    width: 425px;
+    max-width: 425px;
+  }
+}

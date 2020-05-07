@@ -1,0 +1,48 @@
+$transparent: transparent;
+$gray: #94949e;
+$background-primary: #f3123c;
+$color-primary: #fff;
+$color-secondary: #f3123c;
+$color-tertiary: rgb(244, 128, 36);
+
+button {
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: bold;
+  outline: none;
+  padding: 8px 32px;
+  transition-duration: 0.2s;
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.Button {
+  &__transparent {
+    border: none;
+    font-size: 12px;
+    background: $transparent;
+    color: $gray;
+  }
+
+  &__primary {
+    color: $color-primary;
+    padding: 10px 50px;
+    background: $background-primary;
+    font-size: 14px;
+    border: none;
+  }
+
+  &__tertiary {
+    color: $color-tertiary;
+    border: 1.5px solid $color-tertiary;
+    background: $transparent;
+    font-size: 14px;
+  }
+
+  &__advanced {
+    border: none;
+    color: $color-secondary;
+    padding: 0;
+  }
+}
